@@ -16,5 +16,9 @@
   "author": "James Manger",
   "license": "BSD",
   "readmeFilename": "Readme.md",
-  "gitHead": "d5945d2cab31f9e135885568c2015ea72fe52a53"
+  "gitHead": "d5945d2cab31f9e135885568c2015ea72fe52a53",
+  "devDependencies": {
+    "mocha": "",
+    "should": ""
+  }
 }
