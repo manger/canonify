@@ -1,0 +1,20 @@
+{
+  "name": "canonify",
+  "version": "0.0.1",
+  "description": "Canonical JSON",
+  "main": "lib/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manger/canonify.git"
+  },
+  "author": "James Manger",
+  "license": "BSD",
+  "readmeFilename": "Readme.md",
+  "gitHead": "d5945d2cab31f9e135885568c2015ea72fe52a53"
+}
