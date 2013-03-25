@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Canonical JSON",
   "main": "lib/main.js",
+  "bin": { "canonify": "./bin/canonify" },
   "directories": {
     "test": "test"
   },

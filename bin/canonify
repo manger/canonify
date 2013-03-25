@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var canonify = require('../lib/main');
+
+var args = process.argv.slice(2);
+args.forEach(function(arg) {
+  var v = JSON.parse(arg);
+  var s = JSON.canonify(v);
+  if (arg !== s) {
+    console.log('\u2717\t' + arg);
+  }
+  console.log('\u2713\t' + s);
+});
