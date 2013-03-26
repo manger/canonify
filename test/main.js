@@ -112,4 +112,13 @@ describe('canonify', function() {
         .should.eql('{"":3,"A":2,"a":1,"a\\t":5,"a1":4}');
     });
   });
+
+  describe('object key with a toJSON method', function() {
+    it('ignores toJSON on a string', function() {
+      String.prototype.toJSON = function() {
+        return 42;
+      }
+      canonify({"b":1,"a":2}).should.eql('{"a":2,"b":1}');
+    });
+  });
 });
