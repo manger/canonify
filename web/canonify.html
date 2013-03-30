@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>JSON.canonify(value)</title>
+  <script src="canonify.js"></script>
+</head>
+<body>
+  <h1><code>JSON.canonify(<var>value</var>)</code></h1>
+  <p>A canonical form of JavaScript Object Notation (JSON).</p>
+
+<dl>
+<script>
+var x = {
+  t:true,
+  f:false,
+  N:null,
+  a:[2, -3, 5, -7, 11],
+  o:{
+    I:1,
+    II:2,
+    V:5,
+    IX:9
+  },
+  s:"http://example.com is	\u2018Huge\u2019"
+};
+
+x.twothirds = 2 / 3;
+x.sparse = [];
+x.sparse[0] = 'zero';
+x.sparse[2] = 'two';
+
+document.write('<dt>JSON.stringify</dt><dd><code>' + JSON.stringify(x) + '</code></dd>');
+document.write('<dt>JSON.canonify</dt><dd><code>' + JSON.canonify(x) + '</code></dd>');
+</script>
+</dl>
+
+</body>
+</html>
